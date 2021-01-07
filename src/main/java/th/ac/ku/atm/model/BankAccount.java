@@ -6,6 +6,47 @@ public class BankAccount {
     private String type;
     private double balance;
 
-    //  ..Generate.. Getters, Setters, toString()
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "id=" + id +
+                ", customerId=" + customerId +
+                ", type='" + type + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+//  ..Generate.. Getters, Setters, toString()
 }
 

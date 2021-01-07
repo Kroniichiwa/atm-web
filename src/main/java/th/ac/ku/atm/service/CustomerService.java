@@ -15,8 +15,8 @@ public class CustomerService {
     private ArrayList<Customer> customerList = new ArrayList<>();
 
     public void createCustomer(Customer customer) {
-        String hashPin = hash(String.valueOf(customer.getPin()));
-        customer.setPin(Integer.parseInt(hashPin));
+        String hashPin = hash(customer.getPin());
+        customer.setPin(hashPin);
         customerList.add(customer);
     }
 
